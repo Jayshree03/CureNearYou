@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Register Page - Cure Near You -->
+    <head>
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta keyword="Sign Up, Account create, Doctors, Cure Near You, Online Health Assistant">
+        <meta description="Your Only Health Assistant, Register Page">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Sign Up | Cure Near You</title>
+        <!-- Links: Icon, Font, CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&family=Trirong:wght@100&display=swap" rel="stylesheet">
+        <link rel="icon" href="Image/minor_logo.png">
+        <link rel="stylesheet" href="Styles/Register.css">
+    </head>
+    <body>
+        <!-- Register Box -->
+        <!-- LogHead is the whole box, log_box is main content -->
+        <div class="LogHead">
+            <strong>
+                <h1 class="h-base" id="he2">Cure Near You</h1>
+            </strong>
+            <strong>
+                <h1 class="h-base" id="he1">Sign Up As:</h1>
+            </strong>
+            <form class="logForm">
+                <select name="Type" id="type" onchange="run()" required>
+                    <option value="Patient">Patient</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="Hospital">Hospital</option>
+                </select>
+            </form>
+            <div class="log_box">
+                <!-- Form -->
+                <!-- Edit action section according to backend -->
+                <form action="backend" class="logForm">
+                    <!-- Names given for backend -->
+                    <input type="text" name="RegName" id="Name" placeholder="Name" required>
+                    <input type="email" name="RegEmail" id="Email" placeholder="E-Mail ID" required>
+                    <input type="tel" name="RegPhone" id="Phone" placeholder="Phone No." required>
+                    <input type="number" name="RegAge" id="Age" placeholder="Age" required>
+                    <select name="Gender" id="Gender" required>                           
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <input type="password" name="LogPass" id="userPass" placeholder="Password" required>
+                    <input type="password" name="LogPass2" id="userPass2" placeholder="Confirm Password" required>
+                    <!-- mainain password security -->                  
+                    <input type="submit" value="Get Started" id="subBtn">
+                </form>
+            </div>
+        </div>    
+    </body>
+    <script type="text/javascript" src="Scripts/Register.js"></script>
+</html>
