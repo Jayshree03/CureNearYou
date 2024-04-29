@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cure Near You - The Healthcare Assistance</title>
 <%@include file="header.jsp" %>
 
     <!-- Hero Start -->
@@ -56,7 +61,7 @@
                         <div class="col-sm-3 col-6">
                             <div class="bg-light text-center rounded-circle py-4">
                                 <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
-                                <h6 class="mb-0">Free<small class="d-block text-primary">Ambulance</small></h6>
+                                <h6 class="mb-0">Ambulance<small class="d-block text-primary">Services</small></h6>
                             </div>
                         </div>
                     </div>

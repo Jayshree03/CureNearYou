@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cure Near You - The Healthcare Assistance</title>
 <%@include file="header.jsp" %>
 
 

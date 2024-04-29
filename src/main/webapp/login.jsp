@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Appointment | Cure Near You - The Healthcare Assistance</title><%@include file="header.jsp" %>
-
-    <!-- Appointment Start -->
-    <div class="container-fluid py-5">
+    <title>Login | Cure Near You - The Healthcare Assistance</title>
+<%@include file="header.jsp" %>
+<div class="container-fluid py-5">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-6 mb-5 mb-lg-0">
@@ -69,10 +68,8 @@
             </div>
         </div>
     </div>
-    <!-- Appointment End -->
 
 
-   <%@include file="footer.jsp" %>
+<%@include file="footer.jsp" %>
 </body>
-
 </html>
