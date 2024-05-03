@@ -13,7 +13,7 @@
                         <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Login</h5>
                         <h1 class="display-4">WelCome Back!</h1>
                     </div>
-                    <p class="mb-5">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    <p class="mb-5">Welcome to Cure Near You - Healthcare Assistance, your one-stop solution for all your healthcare needs. Our platform aims to provide seamless access to healthcare services, including appointment scheduling, lab test details, medication management, and emergency ambulance assistance. With Cure Near You, you can connect with healthcare providers, access medical information, and receive timely assistance whenever you need it. Log in now to experience convenient and efficient healthcare services.</p>
                     <a class="btn btn-primary rounded-pill py-3 px-5 me-3" href="search.jsp">Find Doctor</a>
                     <a class="btn btn-outline-primary rounded-pill py-3 px-5" href="">Read More</a>
                 </div>
