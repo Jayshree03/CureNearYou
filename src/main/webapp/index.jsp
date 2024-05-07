@@ -6,6 +6,8 @@
     <title>Cure Near You - The Healthcare Assistance</title>
 <%@include file="header.jsp" %>
 
+
+
     <!-- Hero Start -->
     <div class="container-fluid bg-primary py-5 mb-5 hero-header">
         <div class="container py-5">
