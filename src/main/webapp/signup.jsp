@@ -19,7 +19,7 @@
                 <div class="col-lg-6">
                     <div class="bg-light text-center rounded p-5">
                         <h1 class="mb-4">Patient SignUp</h1>
-                        <form>
+                        <form action="" method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-12">
                                     <!-- select class="form-select bg-white border-0" style="height: 55px;">
@@ -34,8 +34,8 @@
                             			<div class="dropdown-menu m-0">
                                 		<a href="" class="dropdown-item">Patient</a>
                                 		<a href="doctor/doctorsignup.jsp" class="dropdown-item">Doctor</a>
-                                		<a href="admin/signup.jsp" class="dropdown-item">Admin</a>
-                                		<a href="hospital/signup.jsp" class="dropdown-item">Hospital</a>
+                                		<a href="admin/adminsignup.jsp" class="dropdown-item">Admin</a>
+                                		<a href="hospital/hospitalsignup.jsp" class="dropdown-item">Hospital</a>
                             		</div>
                        	 		</div>
                          	</div>

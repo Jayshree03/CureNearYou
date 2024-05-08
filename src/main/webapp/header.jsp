@@ -87,6 +87,7 @@
                                 <a href="blog.jsp" class="dropdown-item">Blog Grid</a>
                                 <a href="detail.jsp" class="dropdown-item">Blog Detail</a>
                                 <a href="team.jsp" class="dropdown-item">The Team</a>
+                                <a href="" class="dropdown-item">Profile</a>
                                 <a href="testimonial.jsp" class="dropdown-item">Testimonial</a>
                                 <a href="appointment.jsp" class="dropdown-item">Appointment</a>
                                 <a href="search.jsp" class="dropdown-item">Search</a>

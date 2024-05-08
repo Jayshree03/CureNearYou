@@ -4,17 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>Cure Near You - The Healthcare Assistance</title>
+    <!-- Header File included for head part and navigation part of web page -->
 <%@include file="header.jsp" %>
 
-
-
-    <!-- Hero Start -->
+    <!-- Start -->
     <div class="container-fluid bg-primary py-5 mb-5 hero-header">
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
                     <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .3) !important;">Welcome To Cure Near You</h5>
                     <h1 class="display-1 text-white mb-md-4">Best Healthcare Solution In Your City</h1>
+                  
                     <div class="pt-2">
                         <a href="search.jsp" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">Find Doctor</a>
                         <a href="appointment.jsp" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">Appointment</a>
@@ -101,7 +101,7 @@
                             <i class="fa fa-2x fa-procedures text-white"></i>
                         </div>
                         <h4 class="mb-3">Blood Availability Check</h4>
-                        <p class="m-0">The application provides a platform for patients and hospitals to share and access information about blood requirements. This is especially crucial during emergencies when timely access to blood can be a matter of life and death.</p>
+                        <p class="m-0">The application provides a platform for patients and hospitals to share and access information about blood requirements.</p>
                         <a class="btn btn-lg btn-primary rounded-pill" href="">
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -125,7 +125,7 @@
                             <i class="fa fa-2x fa-ambulance text-white"></i>
                         </div>
                         <h4 class="mb-3">Ambulance Service</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
+                        <p class="m-0">In case of a medical emergency, our Ambulance Service is here to provide swift and efficient assistance.</p>
                         <a class="btn btn-lg btn-primary rounded-pill" href="">
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -137,7 +137,7 @@
                             <i class="fa fa-2x fa-pills text-white"></i>
                         </div>
                         <h4 class="mb-3">Medicine & Pharmacy</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
+                        <p class="m-0">Whether you need prescription medications or over-the-counter products, our integrated pharmacy services ensure that you get what you need, when you need it.</p>
                         <a class="btn btn-lg btn-primary rounded-pill" href="">
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -149,7 +149,7 @@
                             <i class="fa fa-2x fa-stethoscope text-white"></i>
                         </div>
                         <h4 class="mb-3">Appointment Booking</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
+                        <p class="m-0">Whether it's a routine check-up, specialist consultation, or follow-up appointment, you can easily find and book appointments with trusted healthcare providers near you.</p>
                         <a class="btn btn-lg btn-primary rounded-pill" href="">
                             <i class="bi bi-arrow-right"></i>
                         </a>
@@ -170,7 +170,7 @@
                         <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
                         <h1 class="display-4">Make An Appointment For Your Family</h1>
                     </div>
-                    <p class="text-white mb-5">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    <p class="text-white mb-5">Booking medical appointments for your family has been easier with Cure Near You. Our platform allows you to schedule appointments with healthcare professionals for yourself and your family members conveniently and efficiently. Whether it's a routine check-up, specialist consultation, or follow-up appointment, you can easily find and book appointments with trusted healthcare providers near you.</p>
                     <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="">Find Doctor</a>
                     <a class="btn btn-outline-dark rounded-pill py-3 px-5" href="">Read More</a>
                 </div>
@@ -180,7 +180,7 @@
                         <form>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                    <select class="form-select bg-white border-0" style="height: 55px;">
                                         <option selected>Choose Department</option>
                                         <option value="1">Department 1</option>
                                         <option value="2">Department 2</option>
@@ -188,7 +188,7 @@
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                    <select class="form-select bg-white border-0" style="height: 55px;">
                                         <option selected>Select Doctor</option>
                                         <option value="1">Doctor 1</option>
                                         <option value="2">Doctor 2</option>
@@ -196,22 +196,22 @@
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" class="form-control bg-white border-0" placeholder="Your Name" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" class="form-control bg-white border-0" placeholder="Your Email" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date" data-target-input="nearest">
                                         <input type="text"
-                                            class="form-control bg-light border-0 datetimepicker-input"
+                                            class="form-control bg-white border-0 datetimepicker-input"
                                             placeholder="Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="time" id="time" data-target-input="nearest">
                                         <input type="text"
-                                            class="form-control bg-light border-0 datetimepicker-input"
+                                            class="form-control bg-white border-0 datetimepicker-input"
                                             placeholder="Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
                                     </div>
                                 </div>
@@ -220,100 +220,13 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
+                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Appointment End -->
-
-
-    <!-- Pricing Plan Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Medical Packages</h5>
-                <h1 class="display-4">Awesome Medical Programs</h1>
-            </div>
-            <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
-                <div class="bg-light rounded text-center">
-                    <div class="position-relative">
-                        <img class="img-fluid rounded-top" src="img/price-1.jpg" alt="">
-                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                            <h3 class="text-white">Pregnancy Care</h3>
-                            <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>49<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="text-center py-5">
-                        <p>Emergency Medical Treatment</p>
-                        <p>Highly Experienced Doctors</p>
-                        <p>Highest Success Rate</p>
-                        <p>Telephone Service</p>
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
-                    </div>
-                </div>
-                <div class="bg-light rounded text-center">
-                    <div class="position-relative">
-                        <img class="img-fluid rounded-top" src="img/price-2.jpg" alt="">
-                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                            <h3 class="text-white">Health Checkup</h3>
-                            <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>99<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="text-center py-5">
-                        <p>Emergency Medical Treatment</p>
-                        <p>Highly Experienced Doctors</p>
-                        <p>Highest Success Rate</p>
-                        <p>Telephone Service</p>
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
-                    </div>
-                </div>
-                <div class="bg-light rounded text-center">
-                    <div class="position-relative">
-                        <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
-                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                            <h3 class="text-white">Dental Care</h3>
-                            <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>149<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="text-center py-5">
-                        <p>Emergency Medical Treatment</p>
-                        <p>Highly Experienced Doctors</p>
-                        <p>Highest Success Rate</p>
-                        <p>Telephone Service</p>
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
-                    </div>
-                </div>
-                <div class="bg-light rounded text-center">
-                    <div class="position-relative">
-                        <img class="img-fluid rounded-top" src="img/price-4.jpg" alt="">
-                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                            <h3 class="text-white">Operation & Surgery</h3>
-                            <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>199<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="text-center py-5">
-                        <p>Emergency Medical Treatment</p>
-                        <p>Highly Experienced Doctors</p>
-                        <p>Highest Success Rate</p>
-                        <p>Telephone Service</p>
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Pricing Plan End -->
-
-
+    
     <!-- Team Start -->
     <div class="container-fluid py-5">
         <div class="container">
@@ -391,7 +304,7 @@
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
                 <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Find A Doctor</h5>
                 <h1 class="display-4 mb-4">Find A Healthcare Professionals</h1>
-                <h5 class="text-white fw-normal">Duo ipsum erat stet dolor sea ut nonumy tempor. Tempor duo lorem eos sit sed ipsum takimata ipsum sit est. Ipsum ea voluptua ipsum sit justo</h5>
+                <h5 class="text-white fw-normal">Search for trusted healthcare professionals near you with Cure Near You. Whether you need to find a doctor, specialist, or healthcare provider, our platform makes it easy to discover and connect with the right professionals for your healthcare needs. From general practitioners to specialists in various fields, you can explore profiles, read patient reviews, and schedule appointments seamlessly.</h5>
             </div>
             <div class="mx-auto" style="width: 100%; max-width: 600px;">
                 <div class="input-group">

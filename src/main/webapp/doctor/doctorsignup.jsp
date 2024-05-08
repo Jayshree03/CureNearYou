@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SignUp | Cure Near You - The Healthcare Assistance</title>
-<%@include file="doctorheader.jsp" %>
-<div class="container-fluid py-5">
+    <title>Doctor SignUp | Cure Near You - The Healthcare Assistance</title>
+	<%@include file="doctorheader.jsp" %>
+	<div class="container-fluid py-5">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-6 mb-5 mb-lg-0">
@@ -19,7 +19,7 @@
                 <div class="col-lg-6">
                     <div class="bg-light text-center rounded p-5">
                         <h1 class="mb-4">Doctor SignUp</h1>
-                        <form>
+                        <form action="" method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-12">
                                     <!-- select class="form-select bg-white border-0" style="height: 55px;">
@@ -33,9 +33,9 @@
                             			<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Choose Role</a>
                             			<div class="dropdown-menu m-0">
                                 		<a href="../signup.jsp" class="dropdown-item">Patient</a>
-                                		<a href="signup.jsp" class="dropdown-item">Doctor</a>
-                                		<a href="../admin/signup.jsp" class="dropdown-item">Admin</a>
-                                		<a href="../hospital/signup.jsp" class="dropdown-item">Hospital</a>
+                                		<a href="doctorsignup.jsp" class="dropdown-item">Doctor</a>
+                                		<a href="../admin/adminsignup.jsp" class="dropdown-item">Admin</a>
+                                		<a href="../hospital/hospitalsignup.jsp" class="dropdown-item">Hospital</a>
                             		</div>
                        	 		</div>
                          	</div>

@@ -4,9 +4,16 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+<title>Doctor Home | Cure Near You - The Healthcare Assistance</title>
+<%@include file="doctorheader.jsp" %>
+
+
+
+
+
+
+
+<%@include file="doctorfooter.jsp" %>
 
 </body>
 </html>
