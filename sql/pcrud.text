@@ -1,0 +1,22 @@
+-- Insert a new patient
+INSERT INTO patient (pid,age, gender) 
+VALUES (1, 1001, 25, 'Male');
+
+
+-- Retrieve all patients
+SELECT * FROM patient;
+
+-- Retrieve patients by specific criteria
+SELECT * FROM patient WHERE pid = 1;
+
+
+
+-- Update patient information
+UPDATE patient 
+SET age = 30, gender = 'Female' 
+WHERE pid = 1;
+
+
+
+-- Delete a patient
+DELETE FROM patient WHERE pid = 1;
