@@ -3,9 +3,15 @@ package cnu.dto;
 import java.util.HashMap;
 
 public class Hospital {
-	protected int availBed;
+	protected int h_id,availBed;
 	protected String h_licenceno;
 	protected HashMap<String,Integer> availBlood = new HashMap<>();
+	public int getH_id() {
+		return h_id;
+	}
+	public void setH_id(int h_id) {
+		this.h_id = h_id;
+	}
 	public Hospital() {
 		this.availBed=0;
 		availBlood.put("A+",0);
