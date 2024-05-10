@@ -1,6 +1,6 @@
 package cnu.dto;
 
-public class Patient {
+public class Patientdto {
 	protected int p_age,p_id;
 	public int getP_id() {
 		return p_id;

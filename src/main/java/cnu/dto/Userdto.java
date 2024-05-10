@@ -1,6 +1,6 @@
 package cnu.dto;
 
-public class User {
+public class Userdto {
 	//Protected Data Members of class User 
 	protected String uid,uname,uadd,upass;
 	protected int umob,utype;

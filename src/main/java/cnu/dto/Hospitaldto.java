@@ -2,7 +2,7 @@ package cnu.dto;
 
 import java.util.HashMap;
 
-public class Hospital {
+public class Hospitaldto {
 	protected int h_id,availBed;
 	protected String h_licenceno;
 	protected HashMap<String,Integer> availBlood = new HashMap<>();
@@ -12,7 +12,7 @@ public class Hospital {
 	public void setH_id(int h_id) {
 		this.h_id = h_id;
 	}
-	public Hospital() {
+	public Hospitaldto() {
 		this.availBed=0;
 		availBlood.put("A+",0);
 		availBlood.put("B+",0); 
