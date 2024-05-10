@@ -80,6 +80,7 @@
                         <a href="about.jsp" class="nav-item nav-link">About</a>
                         <a href="service.jsp" class="nav-item nav-link">Service</a>
                         <a href="login.jsp" class="nav-item nav-link">Login</a>
+                        <a href="login.jsp" class="nav-item nav-link">Logout</a>
                         <a href="signup.jsp" class="nav-item nav-link">Sign Up</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>

@@ -20,7 +20,8 @@
                         <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
                         <h1 class="display-4">Best Medical Care For Yourself and Your Family</h1>
                     </div>
-                    <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+                    <p>"Cure near you - Healthcare Assistance" is aimed to create a bridge between patients and doctors, facilitating better communication, efficient appointment scheduling, blood requirement details, bed availability, access lab test details and the exchange of other medical information. The project aims to improve the healthcare experience for both patients and doctors by leveraging technology to streamline processes and enhance patient-doctor interactions.
+</p>
                     <div class="row g-3 pt-3">
                         <div class="col-sm-3 col-6">
                             <div class="bg-light text-center rounded-circle py-4">
@@ -43,7 +44,7 @@
                         <div class="col-sm-3 col-6">
                             <div class="bg-light text-center rounded-circle py-4">
                                 <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
-                                <h6 class="mb-0">Free<small class="d-block text-primary">Ambulance</small></h6>
+                                <h6 class="mb-0">Ambulance<small class="d-block text-primary">Services</small></h6>
                             </div>
                         </div>
                     </div>
@@ -55,12 +56,12 @@
 
 
     <!-- Search Start -->
-    <div class="container-fluid bg-primary my-5 py-5">
+        <div class="container-fluid bg-primary my-5 py-5">
         <div class="container py-5">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
                 <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Find A Doctor</h5>
                 <h1 class="display-4 mb-4">Find A Healthcare Professionals</h1>
-                <h5 class="text-white fw-normal">Duo ipsum erat stet dolor sea ut nonumy tempor. Tempor duo lorem eos sit sed ipsum takimata ipsum sit est. Ipsum ea voluptua ipsum sit justo</h5>
+                <h5 class="text-white fw-normal">Search for trusted healthcare professionals near you with Cure Near You. Whether you need to find a doctor, specialist, or healthcare provider, our platform makes it easy to discover and connect with the right professionals for your healthcare needs. From general practitioners to specialists in various fields, you can explore profiles, read patient reviews, and schedule appointments seamlessly.</h5>
             </div>
             <div class="mx-auto" style="width: 100%; max-width: 600px;">
                 <div class="input-group">

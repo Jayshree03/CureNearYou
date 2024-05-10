@@ -19,7 +19,7 @@
                         <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle mb-4" style="width: 100px; height: 70px; transform: rotate(-15deg);">
                             <i class="fa fa-2x fa-location-arrow text-white" style="transform: rotate(15deg);"></i>
                         </div>
-                        <h6 class="mb-0">123 Street, New York, USA</h6>
+                        <h6 class="mb-0">123, India</h6>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -27,7 +27,7 @@
                         <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle mb-4" style="width: 100px; height: 70px; transform: rotate(-15deg);">
                             <i class="fa fa-2x fa-phone text-white" style="transform: rotate(15deg);"></i>
                         </div>
-                        <h6 class="mb-0">+012 345 6789</h6>
+                        <h6 class="mb-0">+91 123 456 7890</h6>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -35,7 +35,7 @@
                         <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle mb-4" style="width: 100px; height: 70px; transform: rotate(-15deg);">
                             <i class="fa fa-2x fa-envelope-open text-white" style="transform: rotate(15deg);"></i>
                         </div>
-                        <h6 class="mb-0">info@example.com</h6>
+                        <h6 class="mb-0">cnu@example.com</h6>
                     </div>
                 </div>
             </div>
