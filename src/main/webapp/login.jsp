@@ -20,22 +20,22 @@
                 <div class="col-lg-6">
                     <div class="bg-light text-center rounded p-5">
                         <h1 class="mb-4">Login</h1>
-                        <form>
+                        <form action="Login" method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-12">
-                                    <select class="form-select bg-white border-0" style="height: 55px;">
+                                    <select name="utype" class="form-select bg-white border-0" style="height: 55px;">
                                         <option selected>Choose Category</option>
                                         <option value="1">Patient</option>
                                         <option value="2">Doctor</option>
                                         <option value="3">Admin</option>
-                                        <option value="3">Hospital</option>
+                                        <option value="4">Hospital</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-12">
-                                    <input type="email" class="form-control bg-white border-0" placeholder="UserId" style="height: 55px;">
+                                    <input type="email" class="form-control bg-white border-0" name="uid" placeholder="UserId" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-12">
-                                    <input type="password" class="form-control bg-white border-0" placeholder="Password" style="height: 55px;">
+                                    <input type="password" class="form-control bg-white border-0" name="upass" placeholder="Password" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Log In</button>

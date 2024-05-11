@@ -1,6 +1,6 @@
 package cnu.dto;
 
-public class Doctor {
+public class Doctordto {
 	protected int d_age;
 	protected String d_gender, d_specification;
 	public int getD_age() {

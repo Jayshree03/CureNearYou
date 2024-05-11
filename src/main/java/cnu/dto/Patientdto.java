@@ -1,7 +1,13 @@
 package cnu.dto;
 
-public class Patient {
-	protected int p_age;
+public class Patientdto {
+	protected int p_age,p_id;
+	public int getP_id() {
+		return p_id;
+	}
+	public void setP_id(int p_id) {
+		this.p_id = p_id;
+	}
 	protected String p_gender;
 	public int getP_age() {
 		return p_age;
