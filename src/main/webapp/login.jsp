@@ -29,6 +29,8 @@
                                         <option value="2">Doctor</option>
                                         <option value="3">Admin</option>
                                         <option value="4">Hospital</option>
+                                        <option value="5">LabTech</option>
+                                        <option value="6">Pharmacy</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-12">

@@ -50,10 +50,14 @@ public class Login extends HttpServlet {
 				response.sendRedirect("./index.jsp");
 			else if(utype == 2)
 				response.sendRedirect("./doctor/doctorindex.jsp");
-			else if(utype == 2)
+			else if(utype == 3)
 				response.sendRedirect("./admin/adminindex.jsp");
-			else if(utype == 2)
+			else if(utype == 4)
 				response.sendRedirect("./hospital/hospitalindex.jsp");
+			else if(utype == 5)
+				response.sendRedirect("./labtech/labtechindex.jsp");
+			else if(utype == 6)
+				response.sendRedirect("./pharmacy/pharmacyindex.jsp");
 		}else {
 			response.sendRedirect("login.jsp");
 		}

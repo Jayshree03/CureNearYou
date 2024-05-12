@@ -19,7 +19,7 @@
                 <div class="col-lg-6">
                     <div class="bg-light text-center rounded p-5">
                         <h1 class="mb-4">Doctor SignUp</h1>
-                        <form action="" method="post">
+                        <form action="DoctorSignUp" method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-12">
                                     <!-- select class="form-select bg-white border-0" style="height: 55px;">
@@ -33,14 +33,15 @@
                             			<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Choose Role</a>
                             			<div class="dropdown-menu m-0">
                                 		<a href="../signup.jsp" class="dropdown-item">Patient</a>
-                                		<a href="doctorsignup.jsp" class="dropdown-item">Doctor</a>
-                                		<a href="../admin/adminsignup.jsp" class="dropdown-item">Admin</a>
+                                		<a href="./doctorsignup.jsp" class="dropdown-item">Doctor</a>
                                 		<a href="../hospital/hospitalsignup.jsp" class="dropdown-item">Hospital</a>
+                                		<a href="../labtech/labtechsignup.jsp" class="dropdown-item">LabTech</a>
+                                		<a href="../pharmacy/pharmacysignup.jsp" class="dropdown-item">Pharmacy</a>
                             		</div>
                        	 		</div>
                          	</div>
                          		<div class="col-12 col-sm-12">
-                                    <input type="hidden" class="form-control bg-white border-0" name="type" value="doctor" style="height: 55px;">
+                                    <input type="hidden" class="form-control bg-white border-0" name="type" value="2" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control bg-white border-0" name="dname" placeholder="Name" style="height: 55px;">
@@ -61,10 +62,10 @@
                                     <input type="text" class="form-control bg-white border-0" name="dspec" placeholder="Specialization" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-12">
-                                    <input type="password" class="form-control bg-white border-0" name="ppass" placeholder="Password" style="height: 55px;">
+                                    <input type="password" class="form-control bg-white border-0" name="dpass" placeholder="Password" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-12">
-                                    <input type="password" class="form-control bg-white border-0" name="pcpass" placeholder="Confirm Password" style="height: 55px;">
+                                    <input type="password" class="form-control bg-white border-0" name="dcpass" placeholder="Confirm Password" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Sign Up</button>
