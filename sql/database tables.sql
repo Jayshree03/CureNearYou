@@ -3,7 +3,7 @@ use cureNearYou;
 create table user(
 	uid varchar(30) not null primary key ,
     uname varchar(15),
-    umob int(12),
+    umob varchar(15),
     uadd varchar(50),
     upass varchar(25),
     utype int(6)
