@@ -48,7 +48,7 @@ desc pharmacy;
 use cureNearYou;
 create table bedAvail(
 	bedid int(30) primary key not null auto_increment,
-    hid varchar(30),
+    hid int(30),
     FOREIGN KEY(hid) references hospital(hid),
     bedtype varchar(30),
     bedcount int(7)
@@ -57,7 +57,7 @@ desc bedAvail;
 use cureNearYou;
 create table bloodAvail(
 	bloodid int(30) primary key not null auto_increment,
-    hid varchar(30),
+    hid int(30),
     FOREIGN KEY(hid) references hospital(hid),
     bloodtype varchar(30),
     bloodunit int(7)
