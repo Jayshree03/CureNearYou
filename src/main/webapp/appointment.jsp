@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+<%@page import="java.util.Vector"%>
+<%@page import="cnu.dao.MainDAO"%>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Appointment | Cure Near You - The Healthcare Assistance</title><%@include file="header.jsp" %>
-
-    <!-- Appointment Start -->
+    <title>Appointment | Cure Near You - The Healthcare Assistance</title>
+    <%@include file="header.jsp" %>
+    <%MainDAO dao = new MainDAO(); %>
+	<%Vector<String> spec =dao.Appointment(); %>
+    <!-- Appointment Start -->		
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row gx-5">
@@ -21,14 +25,14 @@
                 <div class="col-lg-6">
                     <div class="bg-light text-center rounded p-5">
                         <h1 class="mb-4">Book An Appointment</h1>
-                        <form>
+                        <form action="Appointment" method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <select class="form-select bg-white border-0" style="height: 55px;">
-                                        <option selected>Choose Department</option>
-                                        <option value="1">Department 1</option>
-                                        <option value="2">Department 2</option>
-                                        <option value="3">Department 3</option>
+                                    	<option selected>Choose Specification</option>
+                                        <c:forEach items="$spec" var="i">
+                                        	<option value="${i}">${i}</option>
+                                        </c:forEach>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">

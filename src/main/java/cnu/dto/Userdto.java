@@ -2,8 +2,8 @@ package cnu.dto;
 
 public class Userdto {
 	//Protected Data Members of class User 
-	protected String uid,uname,uadd,upass;
-	protected int umob,utype;
+	protected String uid,uname,umob,uadd,upass;
+	protected int utype;
 	public String getUid() {
 		return uid;
 	}
@@ -28,10 +28,10 @@ public class Userdto {
 	public void setUpass(String upass) {
 		this.upass = upass;
 	}
-	public int getUmob() {
+	public String getUmob() {
 		return umob;
 	}
-	public void setUmob(int umob) {
+	public void setUmob(String umob) {
 		this.umob = umob;
 	}
 	public int getUtype() {
