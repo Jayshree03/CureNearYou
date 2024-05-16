@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Vector;
 import cnu.db.DBConnection;
 import cnu.dto.Doctordto;
@@ -144,7 +146,7 @@ public class MainDAO {
 		}
 		return b;
 	}
-	public Vector<String> Appointment(){
+	public Vector<String> SpecAppointment(){
 		Vector<String> app = new Vector<String>();
 		try {
 			con = DBConnection.getConn();
@@ -161,4 +163,43 @@ public class MainDAO {
 		}
 		return app;
 	}
+	public Vector<String> Doc_Appointment(String spec){
+		Vector<String> app = new Vector<String>();
+		try {
+			con = DBConnection.getConn();
+			stm=con.createStatement();
+			rs=stm.executeQuery("select distinct uname from user inner join doctor where doctor.specification ="+ spec +" and utype = 2 ");
+			while(rs.next()) {
+				app.add(rs.getString(1));
+			}
+			rs.close();
+			stm.close();
+			con.close();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		return app;
+	}
+	public List getUserByUid(String uid) {
+		List l = new ArrayList<>();
+        try {
+        	con = DBConnection.getConn();
+            String query = "SELECT * FROM users WHERE uid = ?";
+            PreparedStatement ps = con.prepareStatement(query);
+            ps.setString(1, uid);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+               l.add(rs.getString("uid"));
+               l.add(rs.getString("uname"));
+               l.add(rs.getString("umob"));
+               l.add(rs.getString("uadd"));
+               l.add(rs.getString("utype"));
+               
+                        // No need to set password for profile view
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return l;
+    }
 }

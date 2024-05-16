@@ -40,9 +40,6 @@
                             		</div>
                        	 		</div>
                          	</div>
-                         		<div class="col-12 col-sm-12">
-                                    <input type="hidden" class="form-control bg-white border-0" name="type" value="2" style="height: 55px;">
-                                </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control bg-white border-0" name="dname" placeholder="Name" style="height: 55px;">
                                 </div>

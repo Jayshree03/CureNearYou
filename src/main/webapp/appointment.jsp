@@ -6,9 +6,16 @@
 <head>
     <meta charset="utf-8">
     <title>Appointment | Cure Near You - The Healthcare Assistance</title>
+    <script>
+    var firstDropdown = document.getElementById("specification");
+    var secondDropdown = document.getElementById("sdoctor");
+    var selectedOption = firstDropdown.value;
+    secondDropdown.innerHTML = "";
+    </script>
     <%@include file="header.jsp" %>
     <%MainDAO dao = new MainDAO(); %>
-	<%Vector<String> spec =dao.Appointment(); %>
+	<%Vector<String> spec = dao.SpecAppointment(); %>
+	
     <!-- Appointment Start -->		
     <div class="container-fluid py-5">
         <div class="container">
@@ -28,19 +35,24 @@
                         <form action="Appointment" method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-white border-0" style="height: 55px;">
+                                    <select name="speci" id="specification" onchange="populateSecondDropdown()" class="form-select bg-white border-0" style="height: 55px;">
                                     	<option selected>Choose Specification</option>
-                                        <c:forEach items="$spec" var="i">
-                                        	<option value="${i}">${i}</option>
-                                        </c:forEach>
+                                        <%for (String c : spec) {
+                                            out.println("<option value=\"" + c + "\">" + c + "</option>");
+                                        }
+                                        %>
                                     </select>
                                 </div>
+                               <%String s = request.getParameter("speci"); %>
+                               <%Vector<String> doc = dao.Doc_Appointment(s); %>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-white border-0" style="height: 55px;">
-                                        <option selected>Select Doctor</option>
-                                        <option value="1">Doctor 1</option>
-                                        <option value="2">Doctor 2</option>
-                                        <option value="3">Doctor 3</option>
+                                    <select name="doctor" id="sdoctor" class="form-select bg-white border-0" style="height: 55px;">
+                                        <option selected>Choose Specification</option>
+                                        <%
+                                        for (String c : doc) {
+                                            out.println("<option value=\"" + c + "\">" + c + "</option>");
+                                        }
+                                        %>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
