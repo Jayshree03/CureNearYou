@@ -21,4 +21,7 @@ public class Doctordto {
 	public void setD_specification(String d_specification) {
 		this.d_specification = d_specification;
 	}
-}
+	
+		
+	}
+

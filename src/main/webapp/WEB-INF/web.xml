@@ -69,15 +69,10 @@
     <servlet-name>abc</servlet-name>
     <url-pattern>/abc</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>PatientSignUp</display-name>
-    <servlet-name>PatientSignUp</servlet-name>
-    <servlet-class>cnu.serv.PatientSignUp</servlet-class>
-  </servlet>
+  
   <servlet-mapping>
-    <servlet-name>PatientSignUp</servlet-name>
-    <url-pattern>/PatientSignUp</url-pattern>
+    <servlet-name>patientSignUp</servlet-name>
+    <url-pattern>/patientSignUp</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>

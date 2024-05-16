@@ -35,7 +35,32 @@ public class patientSignUp extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		 int utype =1;
+	        MainDAO dao = new MainDAO();
+	        Userdto udto = new Userdto();
+	        Patientdto pdto = new Patientdto();
+	        udto.setUname(request.getParameter("pname"));
+	        udto.setUid(request.getParameter("puserid"));
+	        udto.setUmob(request.getParameter("pmob"));
+	        udto.setUadd(request.getParameter("padd"));
+	        pdto.setP_age(Integer.parseInt(request.getParameter("page")));
+	        pdto.setP_gender(request.getParameter("pgender"));
+	        udto.setUpass(request.getParameter("ppass"));
+	        String upass=request.getParameter("ppass");
+	        String ucpass = request.getParameter("pcpass");
+	        
+	        // Checking if passwords match
+	        if (!upass.equals(ucpass)) {
+	        	response.sendRedirect("signup.jsp");
+	        } else {
+	        	boolean b = dao.insertPatient(udto,pdto);
+	        	if(b) {
+	        		response.sendRedirect("login.jsp");
+	        	}else {
+	        		response.sendRedirect("signup.jsp");
+	        	}
+	        }
+
 	}
 
 	/**
@@ -44,33 +69,8 @@ public class patientSignUp extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-
+		doGet(request, response);
         // Fetching data from the form
-        int utype =1;
-        MainDAO dao = new MainDAO();
-        Userdto udto = new Userdto();
-        Patientdto pdto = new Patientdto();
-        udto.setUname(request.getParameter("pname"));
-        udto.setUid(request.getParameter("puserid"));
-        udto.setUmob(request.getParameter("pmob"));
-        udto.setUadd(request.getParameter("padd"));
-        pdto.setP_age(Integer.parseInt(request.getParameter("page")));
-        pdto.setP_gender(request.getParameter("pgender"));
-        udto.setUpass(request.getParameter("ppass"));
-        String upass=request.getParameter("ppass");
-        String ucpass = request.getParameter("pcpass");
-        
-        // Checking if passwords match
-        if (!upass.equals(ucpass)) {
-        	response.sendRedirect("signup.jsp");
-        } else {
-        	boolean b = dao.insertPatient(udto,pdto);
-        	if(b) {
-        		response.sendRedirect("login.jsp");
-        	}else {
-        		response.sendRedirect("signup.jsp");
-        	}
-        }
-
+       
 	}
 }

@@ -19,7 +19,7 @@
                 <div class="col-lg-6">
                     <div class="bg-light text-center rounded p-5">
                         <h1 class="mb-4">Doctor SignUp</h1>
-                        <form action="DoctorSignUp" method="post">
+                        <form action="CureNearYou/doctor/DoctorSignUp"  method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-12">
                                     <!-- select class="form-select bg-white border-0" style="height: 55px;">

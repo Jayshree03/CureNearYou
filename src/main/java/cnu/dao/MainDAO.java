@@ -6,9 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Vector;
-
-
 import cnu.db.DBConnection;
+import cnu.dto.Doctordto;
+import cnu.dto.Hospitaldto;
 import cnu.dto.Patientdto;
 import cnu.dto.Userdto;
 
@@ -39,7 +39,6 @@ public class MainDAO {
             pst1.setString(3, pdto.getP_gender());
             int rowsAffecteduser = pst.executeUpdate();
             int rowsAffectedpatient = pst1.executeUpdate();
-
             if (rowsAffecteduser > 0 && rowsAffectedpatient >0) {
                 x=true;
             } else {
@@ -51,6 +50,82 @@ public class MainDAO {
         }
 		return x;
 	}
+		
+		public boolean insertDoctor(Userdto udto , Doctordto ddto) {
+			boolean x = false;
+			try {
+				//Getting connection from DBConnection class
+				con = DBConnection.getConn();
+				
+				//Inserting data into the database
+				String query = "INSERT INTO user (uid , uname , umob , upass , utype) VALUES (? , ? , ? , ? , ?)";
+				PreparedStatement pst = con.prepareStatement(query);
+				pst.setString(1, udto.getUid());
+				pst.setString(2,udto.getUname());
+				pst.setString(3, udto.getUmob());
+				pst.setString(4, udto.getUpass());
+				pst.setInt(5,udto.getUtype());
+				String query1 = "INSERT INTO doctor(uid , age , gender , specification) VALUES (? , ? , ? , ?)";
+				PreparedStatement pst1 = con.prepareStatement(query1);
+				pst1.setString(1, udto.getUid());
+				pst1.setInt(2, ddto.getD_age());
+				pst1.setString(3, ddto.getD_gender());
+				pst1.setString(4, ddto.getD_specification());
+				int rowsAffecteduser = pst.executeUpdate();
+				int rowsAffecteddoctor = pst1.executeUpdate();
+				if(rowsAffecteduser > 0 && rowsAffecteddoctor > 0) {
+					x=true;
+				}
+				else {
+					x=false;
+				}
+			}
+				catch(Exception tt)
+				{
+					System.out.println(tt);
+				}
+				return x;
+				
+			}
+		
+		public boolean insertHospital(Userdto udto , Hospitaldto hdto) {
+			boolean x = false ;
+			try {
+				//Getting connection from DBConnection class
+				con = DBConnection.getConn();
+				
+				//inserting data into the database
+				String query = "INSERT INTO user (uid , uname , umob , uadd , upass , utype ) VALUES (? , ? , ? , ? ,? , ? )";
+				PreparedStatement pst = con.prepareStatement(query);
+				pst.setString(1, udto.getUid());
+				pst.setString(2, udto.getUname());
+				pst.setString(3, udto.getUmob());
+				pst.setString(4, udto.getUadd());
+				pst.setString(5, udto.getUpass());
+				pst.setInt(6, udto.getUtype());
+				String quer1 = "INSERT INTO hospital (uid , hlicenseno)VALUES (?,?)";
+				PreparedStatement pst1 = con.prepareStatement(quer1);
+				pst1.setString(1, udto.getUid());
+				pst1.setString(2,hdto.getH_licenceno());
+				int rowsAffecteduser = pst.executeUpdate();
+				int rowsAffectedhospital = pst1.executeUpdate();
+				if(rowsAffecteduser > 0 && rowsAffectedhospital > 0 ) 
+				{
+					x=true;
+				}
+				else
+				{
+					x=false;
+				}
+			}
+			
+				catch (Exception tt)
+				{
+					System.out.println(tt);
+				}
+				return x;
+			}
+			
 	public boolean checkLoginCred(int utype, String uid, String upass) {
 		boolean b = false;
 		try {
